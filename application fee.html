@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Application Fee</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 40%, rgba(0,212,255,1) 100%);
+            color: #333;
+            padding: 20px;
+            margin: 0;
+        }
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2980b9;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-section {
+            margin-bottom: 20px;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .row div {
+            flex: 1;
+            margin-right: 10px;
+        }
+        .row div:last-child {
+            margin-right: 0;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .button {
+            padding: 12px 20px;
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 40%, rgba(0,212,255,1) 100%);
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 48%;
+        }
+        .button:hover {
+            background-color: #3498db;
+        }
+        .button:disabled {
+            background-color: #bdc3c7;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Education Application Fee</h1>
+
+        <form action="#" method="POST">
+            <!-- Application Fee Section -->
+            <div class="form-section">
+                <label for="application-fee">Application Fee</label>
+                <input type="number" id="application-fee" name="application-fee" required placeholder="Enter application fee amount" step="0.01">
+            </div>
+
+            <!-- Payment Method Section -->
+            <div class="form-section">
+                <label for="payment-method">Payment Method</label>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="">Select a payment method</option>
+                    <option value="credit-card">Credit Card</option>
+                    <option value="debit-card">Debit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="bank-transfer">Bank Transfer</option>
+                </select>
+            </div>
+
+            <!-- Back and Next Buttons -->
+            <div class="button-container">
+                <button type="button" class="button" onclick="window.history.back()">Back</button>
+                <button type="submit" class="button">Submit form</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

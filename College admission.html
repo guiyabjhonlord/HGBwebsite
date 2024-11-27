@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admission Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 40%, rgba(0,212,255,1) 100%);
+            color: #000000;
+            padding: 20px;
+        }
+        .container {
+            width: 60%;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(168, 13, 13, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2C3E50;
+        }
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-section {
+            margin-bottom: 20px;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .row div {
+            flex: 1;
+            margin-right: 10px;
+        }
+        .row div:last-child {
+            margin-right: 0;
+        }
+        .button {
+            display: block;
+            width: 10%;
+            padding: 10px;
+            background-color: #2980b9;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #3498db;
+        }
+        .gender-section input {
+            margin-right: 10px;
+        }
+        .languages-section {
+            margin-top: 20px;
+        }
+        .a{
+            background-color: hsl(172, 80%, 26%);
+        }
+
+        .next-button{
+            height: 30px;
+            width: 60px;
+            color: rgb(82, 82, 82);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 40%, rgba(0,212,255,1) 100%);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>College Admission Form</h1>
+
+        <form action="#" method="POST">
+            <!-- Personal Information Section -->
+            <div class="form-section">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" required>
+
+                <label for="middle-name">Middle Name</label>
+                <input type="text" id="middle-name" name="middle-name">
+
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+
+            <!-- Birthdate Section -->
+            <div class="form-section">
+                <label for="birthdate">Birthdate</label>
+                <div class="row">
+                    <div>
+                        <select id="birth-month" name="birth-month" required>
+                            <option value="">Month</option>
+                            <option value="January">January</option>
+                            <option value="February">February</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select id="birth-day" name="birth-day" required>
+                            <option value="">Day</option>
+                            <!-- Day options (1-31) -->
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select id="birth-year" name="birth-year" required>
+                            <option value="">Year</option>
+                            <option value="2000">2000</option>
+                            <option value="1999">1999</option>
+                            <option value="1998">1998</option>
+                            <option value="1997">1997</option>
+                            <option value="1996">1996</option>
+                            <option value="1995">1995</option>
+                            <option value="1994">1994</option>
+                            <!-- Add more years as needed -->
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gender Section -->
+            <div class="form-section gender-section">
+                <label for="gender">Gender</label>
+                <input type="radio" id="male" name="gender" value="Male"> Male
+                <input type="radio" id="female" name="gender" value="Female"> Female
+            </div>
+
+            <!-- Citizenship Section -->
+            <div class="form-section">
+                <label for="citizenship">Country of Citizenship</label>
+                <input type="text" id="citizenship" name="citizenship" required>
+            </div>
+
+            <!-- Contact Information Section -->
+            <div class="form-section">
+                <label for="phone-number">Phone Number</label>
+                <input type="tel" id="phone-number" name="phone-number" required placeholder="(123) 456-7890">
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="example@gmail.com">
+            </div>
+
+            <!-- Mailing Address Section -->
+            <div class="form-section">
+                <label for="street-address">Street Address</label>
+                <input type="text" id="street-address" name="street-address" required>
+
+                <label for="street-address2">Street Address Line 2 (Optional)</label>
+                <input type="text" id="street-address2" name="street-address2">
+
+                <div class="row">
+                    <div>
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                    <div>
+                        <label for="state">State/Province</label>
+                        <input type="text" id="state" name="state" required>
+                    </div>
+                </div>
+
+                <label for="zip-code">Postal/Zip Code</label>
+                <input type="text" id="zip-code" name="zip-code" required>
+            </div>
+
+            <!-- Emergency Contact Section -->
+            <div class="form-section">
+                <label for="emergency-first-name">Emergency Contact First Name</label>
+                <input type="text" id="emergency-first-name" name="emergency-first-name" required>
+
+                <label for="emergency-last-name">Emergency Contact Last Name</label>
+                <input type="text" id="emergency-last-name" name="emergency-last-name" required>
+
+                <label for="relationship">Relationship to Emergency Contact</label>
+                <input type="text" id="relationship" name="relationship" required>
+
+                <label for="emergency-email">Emergency Contact Email</label>
+                <input type="email" id="emergency-email" name="emergency-email" required placeholder="example@gmail.com">
+
+                <label for="emergency-phone">Emergency Contact Phone Number</label>
+                <input type="tel" id="emergency-phone" name="emergency-phone" required placeholder="(123) 456-7890">
+            </div>
+
+            <!-- Language Skills Section -->
+            <div class="form-section languages-section">
+<a button href="education.html" class="next-button">Next</button>
+</div>     

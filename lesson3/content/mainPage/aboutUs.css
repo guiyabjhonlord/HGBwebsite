@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('logos/background.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+header {
+  background:rgba(255, 255, 255, 0.856);
+  color: rgb(17, 13, 228);
+  padding: 10px 0;
+  margin: 0;
+  text-align:center;
+}
+
+header nav {
+  display: flex;
+  justify-content: center; /* header navi sa right  */
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  flex-direction: flex-end;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: rgb(17, 13, 228);
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+  max-width: 800px;
+  height: 700px;
+  border-radius: 5px;
+  margin: auto;
+  background:rgb(0, 0, 0); /* White background with transparency */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.856);
+}
+
+section {
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color:rgba(25, 0, 255, 0.856);
+}
+h2{
+  color: aliceblue;
+}
+
+p{
+  color: #34495e;
+}
+ul{
+  color: #34495e;
+}
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background:rgba(255, 255, 255, 0.856);
+  color: rgba(25, 0, 255, 0.856);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  
+}

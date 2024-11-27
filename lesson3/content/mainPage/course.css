@@ -1,0 +1,110 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('logos/background.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #dbd4d4;
+}
+
+
+header {
+  background-color:rgba(255, 255, 255, 0.856);
+  color: rgb(17, 13, 228);
+  padding: 10px 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+header .logo h1 {
+  font-size: 30px;
+  margin: 20px;
+}
+
+header .nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header .nav-links li {
+  display: inline;
+  margin-left: 20px;
+}
+
+header .nav-links a {
+  color:rgb(17, 13, 228);
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+header .nav-links a:hover {
+  color: #ecf0f1;
+}
+
+/* Course Section */
+.courses {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 40px 20px;
+}
+span img{
+  height: 100px;
+}
+.course {
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.856);
+  width: 50%;
+  margin: 40px;
+  padding: 40px;
+  transition: transform 0.3s;
+}
+
+.course h2 {
+  font-size: 22px;
+  color:#ecf0f1;
+}
+
+.course p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #7f8c8d;
+}
+
+.course ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.course ul li {
+  font-size: 14px;
+  color: #34495e;
+}
+
+.course:hover {
+  transform: translateY(-10px);
+}
+
+/* Footer */
+footer {
+  background-color:rgba(255, 255, 255, 0.856);
+  color: rgb(17, 13, 228);
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
